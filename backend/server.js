@@ -4,7 +4,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors({
-    origin: '*', 
+    origin: 'https://task-management-application-rb68.vercel.app/'
     
  }));
 app.use(express.json());
