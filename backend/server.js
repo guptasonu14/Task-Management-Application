@@ -3,7 +3,10 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin: '*', 
+    
+ }));
 app.use(express.json());
 
 mongoose.connect('mongodb+srv://sonuguptaviveka:sonu123@cluster0.jfnyqho.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {
