@@ -29,7 +29,7 @@ Follow these steps to run the application locally:
 1. Clone the repository:
 
     ```sh
-    git clone https://github.com/your-username/task-manager.git
+    git clone https://github.com/your-username/task-manager.git](https://github.com/guptasonu14/Task-Management-Application
     cd task-manager
     ```
 
@@ -45,14 +45,7 @@ Follow these steps to run the application locally:
     npm install
     ```
 
-4. Create a `.env` file in the `backend` directory and add your MongoDB connection string:
-
-    ```sh
-    touch .env
-    echo "MONGO_URI=your_mongodb_connection_string" > .env
-    ```
-
-5. Start the backend server:
+4. Start the backend server:
 
     ```sh
     npm start
@@ -91,7 +84,8 @@ Follow these steps to run the application locally:
 
 ## Screenshot
 
-![Task Management Application Screenshot](screenshot.png)
+![image](https://github.com/guptasonu14/Task-Management-Application/assets/74126459/d6f6941f-ab18-4f4a-81d3-447cabc3fd43)
+
 
 ## Deployment
 
