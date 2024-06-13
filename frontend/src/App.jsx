@@ -19,7 +19,7 @@ const App = () => {
   // Function to fetch tasks from the server
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/tasks');
+      const response = await axios.get('https://task-management-application-tyri-qjvjpn58z-sonu-guptas-projects.vercel.app/tasks');
       setTasks(response.data);
     } catch (error) {
       console.error('Error fetching tasks:', error);
@@ -29,9 +29,9 @@ const App = () => {
   // Function to add a new task or update an existing task
   const addOrUpdateTask = async (task) => {
     if (editingTask) {
-      await axios.put(`http://localhost:5000/tasks/${editingTask._id}`, task);
+      await axios.put(`https://task-management-application-tyri-qjvjpn58z-sonu-guptas-projects.vercel.app/tasks/${editingTask._id}`, task);
     } else {
-      await axios.post('http://localhost:5000/tasks', task);
+      await axios.post('https://task-management-application-tyri-qjvjpn58z-sonu-guptas-projects.vercel.app/tasks', task);
     }
     setEditingTask(null);
     fetchTasks();
@@ -39,7 +39,7 @@ const App = () => {
 
   // Function to delete a task by ID
   const deleteTask = async (id) => {
-    await axios.delete(`http://localhost:5000/tasks/${id}`);
+    await axios.delete(`https://task-management-application-tyri-qjvjpn58z-sonu-guptas-projects.vercel.app/tasks/${id}`);
     fetchTasks();
   };
 
